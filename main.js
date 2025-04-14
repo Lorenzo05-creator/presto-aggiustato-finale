@@ -1,6 +1,7 @@
 let navbar = document.querySelector(`#navbar`);
 let links = document.querySelectorAll('.nav-link');
 let logoNavbar = document.querySelector('#logo-navbar')
+let collapse = document.querySelector('.collapse')
 
 
 
@@ -9,6 +10,8 @@ window.addEventListener('scroll', ()=>{
     if (scrolled > 0){
         navbar.classList.remove('bg-black');
         navbar.classList.add('bg-yellow');
+        collapse.classList.remove('bg-black');
+        collapse.classList.add('bg-yellow');
         navbar.style.height = '70px';
         links.forEach((link)=>{
             link.style.color = 'var(--black)'
@@ -18,6 +21,8 @@ window.addEventListener('scroll', ()=>{
     }else{
         navbar.classList.add('bg-black');
         navbar.classList.remove('bg-yellow');
+        collapse.classList.add('bg-black');
+        collapse.classList.remove('bg-yellow');
         navbar.style.height = '90px';
         links.forEach((link)=>{
             link.style.color = 'var(--yellow)'
