@@ -1,0 +1,265 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4, .h1, .h2, .h3, .h4{
+    font-family: "Orbitron", sans-serif;
+}
+
+:root{
+    --yellow: rgb(255,232,31);
+    --black: rgb(23,23,23);
+    --red: rgb(228, 32, 43);
+}
+body{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+.chisiamo-bg{
+    background-image: url(https://www.insolenzadir2d2.it/wp-content/uploads/2020/06/Best-Star-Wars-HD-and-4K-Wallpapers-for-Phone-and-PC-1_4d470f76dc99e18ad75087b1b8410ea9.jpg);
+    background-position: center;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.annunci-bg{
+    background-image: url(https://wallpapers.com/images/hd/cool-star-wars-1920-x-1080-background-kajmxs134ybm7vro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-yellow{
+    background-color: var(--yellow);
+}
+.bg-black{
+    background-color: var(--black);
+}
+.bg-red{
+    background-color: var(--red);
+}
+.text-red{
+    color: var(--red);
+}
+.text-black{
+    color: var(--black);
+}
+.text-yellow{
+    color: var(--yellow);
+}
+
+/*navbar*/
+
+.nav-link{
+    color: yellow;
+    font-weight: 800;
+}
+.nav-link:hover{
+    color:white !important;
+    text-shadow: 2px 2px 5px var(--red), -2px -2px 5px var(--red);
+}
+.logo{
+    width: 50px;
+}
+.navbar{
+    height: 70px;
+    transition: 0.5s;
+}
+.div1{
+    min-height: 200vh;
+}
+/*header*/
+
+.header{
+    background-image: linear-gradient(rgba(0,0,0), transparent, rgba(0,0,0)), url(https://img.freepik.com/foto-gratuito/sfondo-di-iperspazio-3d-con-effetto-tunnel-di-curvatura_1048-12526.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.btn-custom{
+    color: var(--yellow);
+    background-color: var(--black);
+    border: 2px solid var(--yellow);
+    border-radius: 50px;
+    margin: 0px 15px;
+    padding: 20px 30px;
+    transition: 0.5s;
+
+}
+.btn-custom:hover{
+    color: var(--black);
+    background-color: var(--yellow);
+    transform: scale(1.1);
+}
+
+.positioned{
+    position: relative;
+    top: -150px;
+}
+.col-custom{
+    padding: 10px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--black);
+}
+.col-custom:hover{
+    transform: scale(1.1);
+    background-color: var(--black);
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
+@media screen and (max-width: 600px) {
+    .positioned{
+        position: static;
+    }
+    .card-custom{
+        width: 100%;
+    }
+    .annunci-bg{
+        background-color: gray;
+        background-image: url(https://wallpapers.com/images/hd/black-stars-iphone-tch2y1yz0km0c1cg.jpg);
+        background-repeat: repeat-y;
+    }
+    .chisiamo-bg{
+        background-color: gray;
+        background-image: url(https://wallpapers.com/images/hd/black-stars-iphone-tch2y1yz0km0c1cg.jpg);
+    }
+    .chisiamo{
+        text-align: center;
+        font-weight: 900;
+        font-size: xx-large;
+    }
+    .row-spade {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    } 
+    .img-spade{
+        margin-bottom: 20px;
+    }
+
+}
+
+
+.numbers{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.swiper{
+    height: 600px;
+}
+.card-review{
+    height: 250px;
+    width: 500px;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accordion-item, .accordion-button{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+.accordion-button:not(.collapsed) {
+    color: var(--red);
+    background-color: var(--black);
+    
+}
+.card-custom{
+    height: 200px;
+    width: 30%;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+}
+
+
+/*chi siamo*/
+
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opener{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    background-color: var(--black);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.moved{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 3px solid var(--red);
+    background-color: var(--red);
+    position: absolute;
+    background-position: center;
+    background-size: 100%;
+    z-index: 2;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.flipcard{
+    height: 400px;
+    width: 300px;
+  
+
+}
+.flipcard:hover > .inner{
+    transform: rotateY(180deg);
+}
+
+.inner{
+
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+.innerface{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.innerback{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  text-align: center;
+  padding: 15px;
+  background-color: var(--black);
+  background-position: center;
+  border-radius: 20px;
+}
